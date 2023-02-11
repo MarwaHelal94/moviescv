@@ -1,0 +1,120 @@
+
+body 
+{
+    background-color: #343a40;
+    font-family: "segoe ui light";
+}
+
+.search input 
+{
+border: none;
+border-radius: 0;
+background-color: transparent;
+border-bottom: 2px solid #fff;
+}
+.search input:focus
+{
+    background-color: transparent;
+    box-shadow: none;
+}
+input::placeholder
+{
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.overlay
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+transform: scale(0);
+}
+.movie:hover .overlay
+{
+   transform: scale(1);
+}
+/*
+.overlay
+{
+    background-color: rgba(255, 255, 255, 0.7);
+    top: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.movie:hover .overlay
+{
+    top: 0;
+    transition: all 0.5s;
+}
+*/
+/*=======================side menue=================*/
+#sideMenu
+{ 
+    width: 250px;
+    height: 100vh;
+    z-index: 99999999999999;
+    position: fixed;
+    left: -200px;  /*ان اخفيه*/
+    top: 0;
+    overflow: hidden;
+
+}
+
+.leftSide
+{
+    width: 80%;
+    height: 100%;
+    background-color: #343a40;
+    float: left;
+}
+.leftSide ul
+{
+    height: 70%;
+    overflow: hidden;
+}
+.leftSide ul li
+{
+  list-style: none;
+  padding-top: 500px;
+}
+.rightSide
+{
+    width: 20%;
+    height: 100%;
+    background-color: #fff;
+    float: right;
+    position: relative;
+}
+.rightSide img
+{
+ width: 50px;
+ padding: 20px 2px;
+}
+.rightSide #close
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   font-size: 30px;
+   cursor: pointer;
+
+}
+#pagination 
+{
+    background-color: #09c;
+    width: 70%;
+}
+
